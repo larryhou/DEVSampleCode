@@ -120,7 +120,7 @@ install(function($)
 		var data = jsonlist[index - 1];
 		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "][" + data[0] + "] " + url;
 		var item = $("<p style='font-family: Consolas'>[" + new Date() + "]page: " + window.page + "</p>")
-		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>");
+		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>\n");
 		
 		var ibody = window.frames["result"].contentDocument.body;
 		ibody.scrollTop = ibody.scrollHeight;
