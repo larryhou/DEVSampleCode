@@ -37,11 +37,30 @@ install(function($)
 	{
 		$(document).ready(function()
 		{			
-			setTimeout(function()
+			var id, retryCount = 0;
+			function doJob()
 			{
+				clearTimeout(id);
+				
 				var href = $("#Sample_link").attr("href");
-				href && parent.displaySampleCode(href);
-			}, 500);
+				if (href)
+				{
+					parent.displaySampleCode(href)
+				}
+				else
+				if (retryCount < 10)
+				{
+					retryCount++;
+					id = setTimeout(doJob, 100);
+				}
+				else
+				{
+					console.log("ERR: " + location.href);
+					parent.extractSampleCode();
+				}
+			}
+			
+			doJob();			
 		});	
 		
 		return;
@@ -51,7 +70,7 @@ install(function($)
 	var rawlist = [];
 	
 	var index = 0;
-	function loadSampleCode()
+	window.extractSampleCode = function()
 	{
 		if (index < pagelist.length)
 		{
@@ -77,7 +96,7 @@ install(function($)
 		var ibody = window.frames["result"].contentDocument.body;
 		ibody.scrollTop = ibody.scrollHeight;
 		
-		loadSampleCode();
+		extractSampleCode();
 	}
 
 	$("<iframe width='100%' height='300' id='result' frameborder='no' border='0'/>").prependTo("body");
@@ -106,6 +125,6 @@ install(function($)
 			}
 		}
 		
-		loadSampleCode();
+		extractSampleCode();
 	});
 });
