@@ -1,21 +1,19 @@
 // ==UserScript==  
-// @name         SampleCodeCollector
+// @name         SampleCodeExtractor
 // @version      1.0.0
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
-// @description  Collect sample code from developer.apple.com
+// @description  Extract url of sample code zip-file from developer.apple.com
 // @include      https://developer.apple.com/library/*
 // ==/UserScript==
 
 function install(callback)
 {	
-	//console.log("==============init==============");
 	if (location.href.indexOf("https://developer.apple.com/library") != 0 ) return;
-	//console.log(location.href);
 	
 	var script = document.createElement("script");
 	script.type = "text/javascript";
-	script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js";
+	script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js";
 
 	var cb = document.createElement("script");
 	cb.type = "text/javascript";
@@ -25,18 +23,23 @@ function install(callback)
 		document.head.appendChild(cb);
 	});
 	
-	document.head.appendChild(script);	
+	document.head.appendChild(script);
 }
 
 
-// https://developer.apple.com/devcenter/mac/loadredemptioncode.action?seedId=13CB96H8S4
+// https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Sample%20Code
 
 install(function($)
 {
 	if (location.href.indexOf("samplecode") > 0)
 	{
+		if (location.href.indexOf("src=larryhou") < 0)return;
+		
 		$(document).ready(function()
-		{			
+		{	
+			const INTERVAL = 100;
+			const MAX_RETRY_COUNT = Math.ceil(5000 / INTERVAL);
+					
 			var id, retryCount = 0;
 			function doJob()
 			{
@@ -48,14 +51,14 @@ install(function($)
 					parent.displaySampleCode(href)
 				}
 				else
-				if (retryCount < 10)
+				if (retryCount < MAX_RETRY_COUNT)
 				{
 					retryCount++;
-					id = setTimeout(doJob, 100);
+					id = setTimeout(doJob, INTERVAL);
 				}
 				else
 				{
-					console.log("ERR: " + location.href);
+					parent.logExtractError();
 					parent.extractSampleCode();
 				}
 			}
@@ -67,7 +70,8 @@ install(function($)
 	}
 	
 	var pagelist = [];
-	var rawlist = [];
+	var jsonlist = [];
+	var ziplist = [];
 	
 	var index = 0;
 	window.extractSampleCode = function()
@@ -79,17 +83,42 @@ install(function($)
 		}
 		else
 		{
+			$("#kernel").remove();
+			$("<iframe width='100%' height='300' id='summrize' frameborder='no' border='0'/>").insertAfter($("#result"));
+			
+			var doc = window.frames["summrize"].contentDocument;
+			$(doc).ready(function()
+ 			{
+				$(doc.body).css("font-family", "Consolas");
+				$(doc.body).append(ziplist.join("\n"));
+ 			});
+			
 			console.log("============<DONE!>============");
 		}
+	}
+	
+	window.logExtractError = function()
+	{
+		var url = pagelist[index - 1];
+		console.log("ERR:" + url);
 	}
 	
 	window.displaySampleCode = function(url)
 	{
 		url = "https://developer.apple.com" + url;
+		ziplist.push(url);
+		
+		function getFormatedIndex()
+		{
+			var str = index + "";
+			while (str.length < 3) str = "0" + str;
+			return str;
+		}		
+		
 		url = "<a href='" + url + "'>" + url + "</a>";
 		
-		var data = rawlist[index - 1];
-		var text = "[" + data[3] + ":" + data[1] + "][" + data[0] + "] " + url;
+		var data = jsonlist[index - 1];
+		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "][" + data[0] + "] " + url;
 		var item = $("<p style='font-family: Consolas'>[" + new Date() + "]page: " + window.page + "</p>")
 		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>");
 		
@@ -119,8 +148,8 @@ install(function($)
 			url = docs[i][9];
 			if (url.indexOf("samplecode") > 0)
 			{
-				rawlist.push(docs[i]);
-				url = url.replace(/^../, "https://developer.apple.com/library/prerelease/ios");
+				jsonlist.push(docs[i]);
+				url = url.replace(/^../, "https://developer.apple.com/library/prerelease/ios") + "?src=larryhou";
 				pagelist.push(url);
 			}
 		}
