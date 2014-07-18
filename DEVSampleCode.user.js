@@ -110,7 +110,7 @@ install(function($)
 		
 		function getFormatedIndex()
 		{
-			var str = index + "";
+			var str = ziplist.length + "";
 			while (str.length < 3) str = "0" + str;
 			return str;
 		}		
