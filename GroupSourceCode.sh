@@ -35,8 +35,8 @@ group()
 	done
 }
 
-group 1	74	$root/2014
-group 75 157 $root/2013
+group 1   74  $root/2014
+group 75  157 $root/2013
 group 158 195 $root/2012
 group 196 207 $root/2011
 group 208 222 $root/2010
