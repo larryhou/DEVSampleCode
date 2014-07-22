@@ -5,15 +5,15 @@ cd $(dirname $0)
 src=$1
 if [ ! -d $src ]
 then
-	echo samples source-folder doesn\'t exist!
-	exit
+	echo ERR404: samples source-folder doesn\'t exist!
+	exit 404
 fi
 
 dir=$2
 if [ "$dir" = "" ]
 then
-	echo destination-folder cann\'t be empty!
-	exit
+	echo ERR110: destination-folder cann\'t be empty!
+	exit 110
 fi
 
 if [ ! -d $dir ]
