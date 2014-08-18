@@ -130,7 +130,7 @@ install(function($)
 					}
 				}
 				
-				console.log(JSON.stringify(sum));
+				$(doc.body).append($("<div>" + JSON.stringify(sum) + "</div>"));
  			});
 			
 			console.log("============<DONE!>============");
