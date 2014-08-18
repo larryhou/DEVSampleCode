@@ -72,7 +72,9 @@ install(function($)
 	
 	var pagelist = [];
 	var jsonlist = [];
+	
 	var ziplist = [];
+	var zipjson = [];
 	
 	var id;
 	var index = 0;
@@ -100,10 +102,35 @@ install(function($)
 			$(doc).ready(function()
  			{
 				$(doc.body).css("font-family", "Consolas");
-				for (var i in ziplist)
+				for (var i = 0; i < ziplist.length; i++)
 				{
 					$(doc.body).append($("<div>" + ziplist[i] + "</div>"));
 				}
+				
+				var sum = {}
+				
+				var prefix, prev;
+				for (var i = 0; i < zipjson.length; i++)
+				{					
+					prefix = zipjson[i][3].slice(0, 4);
+					if (prefix != prev)
+					{
+						sum[prefix] = [i + 1];
+						if (sum[prev])
+						{
+							sum[prev].push(i);
+						}
+						
+						prev = prefix;
+					}
+					else
+					if (i == zipjson.length - 1)
+					{
+						sum[prefix].push(zipjson.length);
+					}
+				}
+				
+				console.log(JSON.stringify(sum));
  			});
 			
 			console.log("============<DONE!>============");
@@ -131,6 +158,8 @@ install(function($)
 		url = "<a href='" + url + "'>" + url + "</a>";
 		
 		var data = jsonlist[index - 1];
+		zipjson.push(data);
+		
 		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "][" + data[0] + "] " + url;
 		var item = $("<p style='font-family: Consolas'>[" + new Date() + "]page: " + window.page + "</p>")
 		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>\n");
