@@ -181,7 +181,8 @@ install(function($)
 		var docs = data.documents;
 		docs.sort(function(a,b)
 		{
-			return a[3] > b[3]? -1 : 1;
+			if (a[3] != b[3]) return a[3] > b[3]? -1 : 1;
+			return a[9] > b[9]? 1 : -1;
 		});
 			
 		var url;		
