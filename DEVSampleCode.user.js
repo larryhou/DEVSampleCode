@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.0.0
+// @version      1.1.0
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -100,7 +100,10 @@ install(function($)
 			$(doc).ready(function()
  			{
 				$(doc.body).css("font-family", "Consolas");
-				$(doc.body).append(ziplist.join("\n"));
+				for (var i in ziplist)
+				{
+					$(doc.body).append($("<div>" + ziplist[i] + "</div>"));
+				}
  			});
 			
 			console.log("============<DONE!>============");
