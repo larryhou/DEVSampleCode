@@ -14,10 +14,9 @@ cleanUp()
 }
 
 sort $old $new | uniq -d > dup.txt
-sort $new dup.txt | uniq -u > rlt.txt
+sort $new dup.txt | uniq -u > change.txt
 cleanUp dup.txt
 
-cat rlt.txt
+cat change.txt
 echo =========[COUNT]=========
-cat rlt.txt | wc -l 
-cleanUp rlt.txt
+cat change.txt | wc -l 
