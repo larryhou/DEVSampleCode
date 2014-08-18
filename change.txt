@@ -1,0 +1,5 @@
+https://developer.apple.com/library/prerelease/ios/samplecode/AppPrefs/AppPrefsStoringandRetrievingUserPreferences.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/InternationalMountains/InternationalMountains.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/MetalBasic3D/MetalBasic3D.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/UIImageEffects/UIImageEffects.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/sc1991/StoreKitSuite.zip
