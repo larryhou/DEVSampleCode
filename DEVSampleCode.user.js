@@ -31,6 +31,7 @@ function install(callback)
 
 install(function($)
 {
+	const TIME_OUT = 5000;
 	if (location.href.indexOf("samplecode") > 0)
 	{
 		if (location.href.indexOf("src=larryhou") < 0)return;
@@ -38,7 +39,7 @@ install(function($)
 		$(document).ready(function()
 		{	
 			const INTERVAL = 100;
-			const MAX_RETRY_COUNT = Math.ceil(5000 / INTERVAL);
+			const MAX_RETRY_COUNT = Math.ceil(TIME_OUT / INTERVAL);
 					
 			var id, retryCount = 0;
 			function doJob()
@@ -73,13 +74,22 @@ install(function($)
 	var jsonlist = [];
 	var ziplist = [];
 	
+	var id;
 	var index = 0;
 	window.extractSampleCode = function()
 	{
+		clearTimeout(id);
 		if (index < pagelist.length)
-		{
+		{			
 			$("#kernel").attr("src", pagelist[index]);
 			index++;
+			
+			var callee = arguments.callee;
+			id = setTimeout(function()
+			{
+				console.log(jsonlist[index - 1]);
+				callee();
+			}, TIME_OUT + 500);
 		}
 		else
 		{
