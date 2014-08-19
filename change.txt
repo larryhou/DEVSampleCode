@@ -1,5 +1,2 @@
-https://developer.apple.com/library/prerelease/ios/samplecode/AppPrefs/AppPrefsStoringandRetrievingUserPreferences.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/InternationalMountains/InternationalMountains.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/MetalBasic3D/MetalBasic3D.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/UIImageEffects/UIImageEffects.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/sc1991/StoreKitSuite.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/MetalTexturedQuadCpp/MetalTexturedQuadCpp.zip
+{"2009":"[182, 188]","2010":"[167, 181]","2011":"[155, 166]","2012":"[136, 154]","2013":"[72, 135]","2014":"[1, 71]"}
