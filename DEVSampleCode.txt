@@ -1,31 +1,40 @@
+https://developer.apple.com/library/prerelease/ios/samplecode/RosyWriter/RosyWriter.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Lister/ListerAProductivityAppObj-CandSwift.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/MetalTexturedQuadCpp/MetalTexturedQuadCpp.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/AdaptivePhotos/AdaptivePhotosAnAdaptiveApplication.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Adventure-Swift/AdventureBuildingaSpriteKitGameUsingSwift.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/UICatalog/UICatalogCreatingandCustomizingUIKitControlsObj-CandSwift.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/CloudAtlas/CloudKitAtlasAnIntroductiontoCloudKit.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/HelloGoodbye/HelloGoodbyeUsingtheAccessibilityAPItoWidenYourUserBase.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/SamplePhotoEditingExtension/SamplePhotoEditingExtension.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/AppPrefs/AppPrefsStoringandRetrievingUserPreferences.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Bananas/BananasAsimpleSceneKitplatforminggame.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/SceneKitVehicle/SceneKitVehicleDemo.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/CloudAtlas/CloudKitAtlasAnIntroductiontoCloudKit.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/CloudCaptions/CloudCaptionsHowintegrateCloudKitintoyourapplication.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/Fit/FitStoreandRetrieveHealthKitData.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/GeocoderDemo/GeocoderDemo.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/HelloGoodbye/HelloGoodbyeUsingtheAccessibilityAPItoWidenYourUserBase.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/KeychainTouchID/KeychainTouchIDUsingTouchIDwithKeychainandLocalAuthentication.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/LocateMe/LocateMe.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/LookInside/LookInsidePresentationControllersAdaptivityandCustomAnimatorObjects.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalBasic3D/MetalBasic3D.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalDeferredLighting/MetalDeferredLighting.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalEnvironmentMapping/MetalEnvironmentMapping.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalImageProcessing/MetalImageProcessing.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalTexturedQuad/MetalTexturedQuad.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/MetalTexturedQuadCpp/MetalTexturedQuadCpp.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalUniformStreaming/MetalUniformStreaming.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MetalVertexStreaming/MetalVertexStreaming.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/PhotoHandoff/PhotoHandoffImplementingNSUserActivitytohandoffuseractions.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/SamplePhotoEditingExtension/SamplePhotoEditingExtension.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/SceneKitVehicle/SceneKitVehicleDemo.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/TableSearch_UISearchController/TableSearchwithUISearchControllerObj-CandSwift.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/UICatalog/UICatalogCreatingandCustomizingUIKitControlsObj-CandSwift.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/footprint/FootprintIndoorPositioningwithCoreLocation.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/Teslameter/Teslameter.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/CustomHTTPProtocol/CustomHTTPProtocol.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/PageControl/PageControl.zip
+https://developer.apple.com/library/prerelease/ios/samplecode/WiTap/WiTap.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/UIImageEffects/UIImageEffects.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/AppPrefs/AppPrefsStoringandRetrievingUserPreferences.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/footprint/footprintIndoorPositioningwithCoreLocation.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/sc1991/StoreKitSuite.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/InternationalMountains/InternationalMountains.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Tabster/Tabster.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/QuickContacts/QuickContacts.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/AdaptivePhotos/AdaptivePhotosAnAdaptiveApplication.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/Fit/FitStoreandRetrieveHealthKitData.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/ImageInverter/ImageInverterCreatingActionExtensions.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/PeoplePicker/PeoplePickerPickingaPersonorProperty.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/KeychainTouchID/KeychainTouchIDUsingTouchIDwithKeychainandLocalAuthentication.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Reflection/Reflection.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AVPlayerDemo/AVPlayerDemo.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/CoreAudioUtilityClasses/CoreAudioUtilityClasses.zip
@@ -89,7 +98,6 @@ https://developer.apple.com/library/prerelease/ios/samplecode/Popovers/Popovers.
 https://developer.apple.com/library/prerelease/ios/samplecode/ToolbarSearch/ToolbarSearch.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MultipeerGroupChat/MultipeerGroupChat.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AVSimpleEditoriOS/AVSimpleEditoriOS.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/CustomHTTPProtocol/CustomHTTPProtocol.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/DateSectionTitles/DateSectionTitles.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AudioTapProcessor/AudioTapProcessor.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/UnwindSegue/UnwindSegue.zip
@@ -119,7 +127,6 @@ https://developer.apple.com/library/prerelease/ios/samplecode/MapSearch/MapSearc
 https://developer.apple.com/library/prerelease/ios/samplecode/Touches/Touches.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/PhotoLocations/PhotoLocations.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/QuartzDemo/QuartzDemo.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/GeocoderDemo/GeocoderDemo.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/SimpleUndo/SimpleUndo.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/LazyTableImages/LazyTableImages.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/SimpleFTPSample/SimpleFTPSample.zip
@@ -127,11 +134,9 @@ https://developer.apple.com/library/prerelease/ios/samplecode/TheElements/TheEle
 https://developer.apple.com/library/prerelease/ios/samplecode/MapCallouts/MapCallouts.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/SquareCam/SquareCam.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GLAirplay/GLAirplay.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/WiTap/WiTap.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/XMLPerformance/XMLPerformance.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MoveMe/MoveMe.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GLCameraRipple/GLCameraRipple.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/PageControl/PageControl.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/SimpleGestureRecognizers/SimpleGestureRecognizers.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Breadcrumb/Breadcrumb.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/PrintWebView/PrintWebView.zip
@@ -159,7 +164,6 @@ https://developer.apple.com/library/prerelease/ios/samplecode/LoadPresetDemo/Loa
 https://developer.apple.com/library/prerelease/ios/samplecode/PocketCoreImage/PocketCoreImage.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/PrintPhoto/PrintPhoto.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/StopNGo/StopNGo.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/RosyWriter/RosyWriter.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/StitchedStreamPlayer/StitchedStreamPlayer.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GKAuthentication/GKAuthentication.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Regions/Regions.zip
@@ -171,11 +175,9 @@ https://developer.apple.com/library/prerelease/ios/samplecode/MixerHost/MixerHos
 https://developer.apple.com/library/prerelease/ios/samplecode/SysSound/SysSound.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/EADemo/EADemo.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GenericKeychain/GenericKeychain.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/LocateMe/LocateMe.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GLGravity/GLGravity.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/oalTouch/oalTouch.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AQOfflineRenderTest/AQOfflineRenderTest.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/Teslameter/Teslameter.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/URLCache/URLCache.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/HelloWorld_iPhone/HelloWorld_iPhone.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/BonjourWeb/BonjourWeb.zip
@@ -186,4 +188,9 @@ https://developer.apple.com/library/prerelease/ios/samplecode/SQLiteQuery/SQLite
 https://developer.apple.com/library/prerelease/ios/samplecode/iPatch/iPatch.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AddMusic/AddMusic.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/CryptoExercise/CryptoExercise.zip
-{"2009":"[182, 188]","2010":"[167, 181]","2011":"[155, 166]","2012":"[136, 154]","2013":"[72, 135]","2014":"[1, 71]"}
+group 184 190 $dir/2009
+group 171 183 $dir/2010
+group 160 170 $dir/2011
+group 141 159 $dir/2012
+group 81  140 $dir/2013
+group 1   80  $dir/2014

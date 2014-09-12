@@ -13,8 +13,8 @@ cleanUp()
 	fi
 }
 
-sort $old $new | uniq -d > dup.txt
-sort $new dup.txt | uniq -u > change.txt
+sort -r $old $new | uniq -d > dup.txt
+sort -r $new dup.txt | uniq -u > change.txt
 cleanUp dup.txt
 
 cat change.txt

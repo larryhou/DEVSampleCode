@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.2.0
+// @version      1.2.1
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -130,7 +130,28 @@ install(function($)
 					}
 				}
 				
-				$(doc.body).append($("<div>" + JSON.stringify(sum) + "</div>"));
+				function padding(value, length)
+				{
+					var rlt = String(value);
+					
+					var offset = length - rlt.length
+					while (offset > 0)
+					{
+						rlt += "&nbsp";
+						offset--;
+					}
+					
+					return rlt;
+				}
+				
+				var group = [];
+				for (var key in sum)
+				{
+					group.push("group " + padding(sum[key][0], 4) + padding(sum[key][1], 4) + "$dir/" + key);
+					group[group.length - 1] = "<div>" + group[group.length - 1] + "</div>";
+				}
+				
+				$(doc.body).append($(group.join(" ")));
  			});
 			
 			console.log("============<DONE!>============");
