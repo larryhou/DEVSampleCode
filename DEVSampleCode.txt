@@ -1,10 +1,10 @@
+https://developer.apple.com/library/prerelease/ios/samplecode/CloudAtlas/CloudKitAtlasAnIntroductiontoCloudKit.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/RosyWriter/RosyWriter.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Lister/ListerAProductivityAppObj-CandSwift.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AdaptivePhotos/AdaptivePhotosAnAdaptiveApplication.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Adventure-Swift/AdventureBuildingaSpriteKitGameUsingSwift.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AppPrefs/AppPrefsStoringandRetrievingUserPreferences.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Bananas/BananasAsimpleSceneKitplatforminggame.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/CloudAtlas/CloudKitAtlasAnIntroductiontoCloudKit.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/CloudCaptions/CloudCaptionsHowintegrateCloudKitintoyourapplication.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Fit/FitStoreandRetrieveHealthKitData.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GeocoderDemo/GeocoderDemo.zip
@@ -167,7 +167,6 @@ https://developer.apple.com/library/prerelease/ios/samplecode/StopNGo/StopNGo.zi
 https://developer.apple.com/library/prerelease/ios/samplecode/StitchedStreamPlayer/StitchedStreamPlayer.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GKAuthentication/GKAuthentication.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/Regions/Regions.zip
-https://developer.apple.com/library/prerelease/ios/samplecode/AdvancedURLConnections/AdvancedURLConnections.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/GKTapper/GKTapper.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/MVCNetworking/MVCNetworking.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/ListAdder/ListAdder.zip
@@ -188,9 +187,9 @@ https://developer.apple.com/library/prerelease/ios/samplecode/SQLiteQuery/SQLite
 https://developer.apple.com/library/prerelease/ios/samplecode/iPatch/iPatch.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AddMusic/AddMusic.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/CryptoExercise/CryptoExercise.zip
-group 184 190 $dir/2009
-group 171 183 $dir/2010
-group 160 170 $dir/2011
+group 183 189 $dir/2009
+group 170 182 $dir/2010
+group 160 169 $dir/2011
 group 141 159 $dir/2012
 group 81  140 $dir/2013
 group 1   80  $dir/2014
