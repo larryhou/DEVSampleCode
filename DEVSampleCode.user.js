@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.2.2
+// @version      1.2.3
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -147,7 +147,7 @@ install(function($)
 				var group = [];
 				for (var key in sum)
 				{
-					group.push("group " + padding(sum[key][0], 4) + padding(sum[key][1], 4) + "$dir/" + key);
+					group.push("group " + padding(sum[key][0], 4) + padding(sum[key][1], 4) + "${dir}/" + key);
 					group[group.length - 1] = "<div>" + group[group.length - 1] + "</div>";
 				}
 				
