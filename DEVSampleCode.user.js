@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.2.1
+// @version      1.2.2
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -101,7 +101,7 @@ install(function($)
 			var doc = window.frames["summrize"].contentDocument;
 			$(doc).ready(function()
  			{
-				$(doc.body).css("font-family", "Consolas");
+				$(doc.body).css("font-family", "Consolas,Menlo");
 				for (var i = 0; i < ziplist.length; i++)
 				{
 					$(doc.body).append($("<div>" + ziplist[i] + "</div>"));
@@ -182,17 +182,17 @@ install(function($)
 		zipjson.push(data);
 		
 		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "][" + data[0] + "] " + url;
-		var item = $("<p style='font-family: Consolas'>[" + new Date() + "]page: " + window.page + "</p>")
+		var item = $("<p style='font-family: Consolas,Menlo'>[" + new Date() + "]page: " + window.page + "</p>")
 		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>\n");
 		
 		var ibody = window.frames["result"].contentDocument.body;
-		ibody.scrollTop = ibody.scrollHeight;
+		ibody.scrollTop = ibody.scrollHeight;f
 		
 		extractSampleCode();
 	}
 
 	$("<iframe width='100%' height='300' id='result' frameborder='no' border='0'/>").prependTo("body");
-	$(window.frames["result"].contentDocument.body).append($("<p id='content' style='font-family: Consolas'/>"));
+	$(window.frames["result"].contentDocument.body).append($("<p id='content' style='font-family: Consolas,Menlo'/>"));
 	
 	$("<iframe width='100%' height='300' id='kernel' frameborder='no' border='0'/>").prependTo("body");
 
