@@ -24,7 +24,7 @@ group()
 	
 	folder=$3
 	if [ ! -d "${folder}" ]
-
+	then
 		mkdir ${folder}
 	fi
 	
@@ -45,11 +45,12 @@ group()
 	done
 }
 
-group 81  140 ${dir}/2013
-group 184 190 ${dir}/2009
-group 171 183 ${dir}/2010
-group 160 170 ${dir}/2011
-group 141 159 ${dir}/2012
-group 1   80  ${dir}/2014
+group 197 203 ${dir}/2009
+group 185 196 ${dir}/2010
+group 174 184 ${dir}/2011
+group 158 173 ${dir}/2012
+group 103 157 ${dir}/2013
+group 20  102 ${dir}/2014
+group 1   19  ${dir}/2015
 
 

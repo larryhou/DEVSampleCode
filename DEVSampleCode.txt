@@ -201,10 +201,10 @@ https://developer.apple.com/library/prerelease/ios/samplecode/SQLiteQuery/SQLite
 https://developer.apple.com/library/prerelease/ios/samplecode/iPatch/iPatch.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/AddMusic/AddMusic.zip
 https://developer.apple.com/library/prerelease/ios/samplecode/CryptoExercise/CryptoExercise.zip
-group 197 203 $dir/2009
-group 185 196 $dir/2010
-group 174 184 $dir/2011
-group 158 173 $dir/2012
-group 103 157 $dir/2013
-group 20  102 $dir/2014
-group 1   19  $dir/2015
+group 197 203 ${dir}/2009
+group 185 196 ${dir}/2010
+group 174 184 ${dir}/2011
+group 158 173 ${dir}/2012
+group 103 157 ${dir}/2013
+group 20  102 ${dir}/2014
+group 1   19  ${dir}/2015
