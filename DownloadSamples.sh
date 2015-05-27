@@ -19,4 +19,4 @@ then
 	mkdir -pv ${output}
 fi
 
-cat DEVSampleCode.txt | xargs -I{} wget -N -P ${output} {}
+cat DEVSampleCode.txt | xargs -I{} wget -P ${output} {}
