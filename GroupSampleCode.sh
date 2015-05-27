@@ -25,7 +25,7 @@ group()
 	folder=$3
 	if [ ! -d "${folder}" ]
 	then
-		mkdir ${folder}
+		mkdir -pv ${folder}
 	fi
 	
 	count=0
