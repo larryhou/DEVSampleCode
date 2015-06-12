@@ -2,7 +2,7 @@
 cd $(dirname $0)
 
 src=/Users/larryhou/Downloads/DEVSourceCode
-dir=/Users/larryhou/Documents/developer/samples
+dir=/Users/larryhou/Documents/Developer/Samples
 while getopts :d:s:h OPTION
 do
 	case ${OPTION} in
@@ -38,7 +38,7 @@ group()
 			
 			if [ -f ${src}/${name} ]
 			then
-				mv -fv ${src}/${name} ${folder}
+				cp -fv ${src}/${name} ${folder}
 			fi
 		fi
 	done
