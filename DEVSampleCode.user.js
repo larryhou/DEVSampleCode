@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.2.3
+// @version      1.3.0
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -199,18 +199,23 @@ install(function($)
 	$.getJSON("https://developer.apple.com/library/prerelease/ios/navigation/library.json",
 	function(data)
 	{	
-		var docs = data.documents;
-		docs.sort(function(a,b)
+		var docs = data.documents, keys = data.columns;
+		docs.sort(function(a, b)
 		{
-			if (a[3] != b[3]) return a[3] > b[3]? -1 : 1;
-			return a[9] > b[9]? 1 : -1;
+			return a[keys.sortOrder] > b[keys.sortOrder]? -1 : 1;
 		});
+		
+		var reg = /Sample\s*Code/i;
+		var type = data.topics[0].contents.filter(function(item)
+		{
+			return reg.test(item.name);
+		})[0].key;
 			
 		var url;		
 		for(var i = 0; i < docs.length; i++)
 		{
-			url = docs[i][9];
-			if (url.indexOf("samplecode") > 0)
+			url = docs[i][keys.url];
+			if (docs[i][keys.type] == type)
 			{
 				jsonlist.push(docs[i]);
 				url = url.replace(/^../, "https://developer.apple.com/library/prerelease/ios") + "?src=larryhou";

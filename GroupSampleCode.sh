@@ -39,18 +39,17 @@ group()
 			if [ -f ${src}/${name} ]
 			then
 				mv -fv ${src}/${name} ${folder}
-				#7z x -y ${folder}/${name} -o${folder}
 			fi
 		fi
 	done
 }
 
-group 197 203 ${dir}/2009
-group 185 196 ${dir}/2010
-group 174 184 ${dir}/2011
-group 158 173 ${dir}/2012
-group 103 157 ${dir}/2013
-group 20  102 ${dir}/2014
-group 1   19  ${dir}/2015
+group 246 252 ${dir}/2009
+group 235 245 ${dir}/2010
+group 224 234 ${dir}/2011
+group 189 223 ${dir}/2012
+group 123 188 ${dir}/2013
+group 46  122 ${dir}/2014
+group 1   45  ${dir}/2015
 
 
