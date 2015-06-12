@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.3.0
+// @version      1.3.1
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -176,12 +176,12 @@ install(function($)
 			return str;
 		}		
 		
-		url = "<a href='" + url + "'>" + url + "</a>";
-		
 		var data = jsonlist[index - 1];
 		zipjson.push(data);
 		
-		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "][" + data[0] + "] " + url;
+		link = "<a href='" + url + "'>" + data[0] + "</a>";
+		
+		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "]" + link;
 		var item = $("<p style='font-family: Consolas,Menlo'>[" + new Date() + "]page: " + window.page + "</p>")
 		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>\n");
 		
