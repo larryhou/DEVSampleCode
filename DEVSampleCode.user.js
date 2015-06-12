@@ -1,6 +1,6 @@
 // ==UserScript==  
 // @name         SampleCodeExtractor
-// @version      1.3.1
+// @version      1.3.2
 // @author       larryhou@github.com
 // @namespace    https://github.com/larryhou
 // @description  Extract url of sample code zip-file from developer.apple.com
@@ -179,14 +179,14 @@ install(function($)
 		var data = jsonlist[index - 1];
 		zipjson.push(data);
 		
-		link = "<a href='" + url + "'>" + data[0] + "</a>";
+		link = "<a href='" + url + "'>" + data[tkeys.name] + "</a>";
 		
-		var text = getFormatedIndex() + ".[" + data[3] + ":" + data[1] + "]" + link;
+		var text = getFormatedIndex() + ".[" + data[tkeys.date] + ":" + data[tkeys.id] + "]" + link;
 		var item = $("<p style='font-family: Consolas,Menlo'>[" + new Date() + "]page: " + window.page + "</p>")
 		$(window.frames["result"].contentDocument).find("p[id='content']").append("<div>" + text + "</div>\n");
 		
 		var ibody = window.frames["result"].contentDocument.body;
-		ibody.scrollTop = ibody.scrollHeight;f
+		ibody.scrollTop = ibody.scrollHeight;
 		
 		extractSampleCode();
 	}
@@ -199,10 +199,16 @@ install(function($)
 	$.getJSON("https://developer.apple.com/library/prerelease/ios/navigation/library.json",
 	function(data)
 	{	
-		var docs = data.documents, keys = data.columns;
+		var docs = data.documents, tkeys = data.columns;
+		parent.tkeys = tkeys;
+		console.log(parent.Table);
+		console.log(tkeys)
+		
 		docs.sort(function(a, b)
 		{
-			return a[keys.sortOrder] > b[keys.sortOrder]? -1 : 1;
+			if (a[tkeys.date] != b[tkeys.date]) return a[tkeys.date] > b[tkeys.date]? -1 : 1
+			if (a[tkeys.sortOrder] != b[tkeys.sortOrder]) return a[tkeys.sortOrder] > b[tkeys.sortOrder]? -1 : 1;
+			return 0
 		});
 		
 		var reg = /Sample\s*Code/i;
@@ -214,8 +220,8 @@ install(function($)
 		var url;		
 		for(var i = 0; i < docs.length; i++)
 		{
-			url = docs[i][keys.url];
-			if (docs[i][keys.type] == type)
+			url = docs[i][tkeys.url];
+			if (docs[i][tkeys.type] == type)
 			{
 				jsonlist.push(docs[i]);
 				url = url.replace(/^../, "https://developer.apple.com/library/prerelease/ios") + "?src=larryhou";
